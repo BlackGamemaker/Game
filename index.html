@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandcastle Unblocked</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Beach defense</p>
+          <h1>Sandcastle Unblocked</h1>
+        </div>
+        <div class="hud" aria-live="polite">
+          <div class="stat">
+            <span>Health</span>
+            <strong id="health">5</strong>
+          </div>
+          <div class="stat">
+            <span>Score</span>
+            <strong id="score">0</strong>
+          </div>
+          <div class="stat">
+            <span>Wave</span>
+            <strong id="wave">1</strong>
+          </div>
+          <div class="stat">
+            <span>Gold</span>
+            <strong id="gold">0</strong>
+          </div>
+        </div>
+      </header>
+
+      <canvas id="gameCanvas" width="1100" height="640"></canvas>
+
+      <div class="controls">
+        <button class="weapon-button active" data-weapon="0">1. Cannon</button>
+        <button class="weapon-button" data-weapon="1">2. Bounce</button>
+        <button class="weapon-button" data-weapon="2">3. Explosive</button>
+        <button id="upgradeBtn" class="upgrade-button">Upgrade weapon (E)</button>
+      </div>
+
+      <p class="tip">
+        Aim with the mouse, click to fire, and use 1/2/3 to swap weapons. Press E to
+        upgrade the selected cannon. Survive each wave and keep the shoreline safe.
+      </p>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
